@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --tomato: hsl(4, 100%, 67%);
+  --stale-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+
+  /* thypography */
+  --family: "Roboto";
+  --fn-base: 16px;
+  --weight-bold: 700;
+  --weight-normal: 400;
+
+  /* borders */
+  --radii: 1rem;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--charcoal-grey);
+  font-family: var(--family);
+  font-size: var(--fn-base);
+}
+
+.app-container {
+  width: 700px;
+  height: 450px;
+  border-radius: 1.5rem;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.img {
+  height: 420px;
+  border-radius: var(--radii);
+}
+
+.form-container {
+  width: 340px;
+  height: 420px;
+  margin-left: 10px;
+  font-size: var(--fn-base);
+  font-family: var(--family);
+  color: var(--stale-grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* background-color: brown; */
+}
+
+h1 {
+  font-size: 55px;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: brown; */
+}
+
+.checkbox {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.email-adress {
+  width: 340px;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: 1px solid var(--grey);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.error-input {
+  width: 340px;
+  height: 40px;
+  border-radius: 0.5rem;
+  background-color: rgb(248, 230, 228);
+  border: 1px solid var(--tomato);
+  color: var(--tomato);
+  padding: 10px;
+  margin-top: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.email-label {
+  font-size: 10px;
+  font-family: var(--family);
+  font-weight: var(--weight-bold);
+}
+
+.sub-button {
+  width: 340px;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 20px;
+  background-color: var(--stale-grey);
+  color: var(--white);
+  font-family: var(--family);
+  cursor: pointer;
+}
+
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message {
+  font-size: 10px;
+  font-family: var(--family);
+  font-weight: var(--weight-bold);
+  color: var(--tomato);
+}
+
+/* GRATITUDE */
+
+.gratitude-container {
+  padding: 40px;
+  color: var(--stale-grey);
+  width: 400px;
+  height: 400px;
+  border-radius: 2rem;
+  background-color: var(--white);
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.tittle {
+  font-size: 40px;
+}
+
+.manual {
+  font-size: 13px;
+  font-weight: var(--weight-normal);
+}
+
+.dimiss-button {
+  width: 380px;
+  height: 40px;
+  border-radius: 0.5rem;
+  border: none;
+  margin-top: 20px;
+  background-color: var(--stale-grey);
+  color: var(--white);
+  font-family: var(--family);
+  cursor: pointer;
+}
