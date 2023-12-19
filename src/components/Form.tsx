@@ -31,11 +31,17 @@ const Form = ({ setFunction, emailFuncsion }: SetSuccess & SetEmail) => {
       <h1>Stay updated!</h1>
       <span>Join 60,000+ product managers receiving monthly updates on:</span>
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
-        <input className="checkbox" type="checkbox" {...register("chek")} />
-        Product discovery and building what matters
-        <input className="checkbox" type="checkbox" /> Measuring to ensure
-        updates are a success
-        <input className="checkbox" type="checkbox" /> And much more!
+        <p>
+          <input className="checkbox" type="checkbox" {...register("chek")} />
+          Product discovery and building what matters
+        </p>
+        <p>
+          <input className="checkbox" type="checkbox" /> Measuring to ensure
+          updates are a success
+        </p>
+        <p>
+          <input className="checkbox" type="checkbox" /> And much more!
+        </p>
         <label>
           <div className="message-container">
             <span className="email-label">Email address</span>
@@ -44,6 +50,7 @@ const Form = ({ setFunction, emailFuncsion }: SetSuccess & SetEmail) => {
           <input
             className={errors.email ? "error-input" : "email-adress"}
             type="text"
+            inputMode="email"
             placeholder="email@company.com"
             {...register("email", {
               pattern: {
