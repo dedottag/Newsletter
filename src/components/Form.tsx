@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import checked from "./images/icon-list.svg";
 
 type FormData = {
   email: string;
@@ -31,17 +32,20 @@ const Form = ({ setFunction, emailFuncsion }: SetSuccess & SetEmail) => {
       <h1>Stay updated!</h1>
       <span>Join 60,000+ product managers receiving monthly updates on:</span>
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
-        <p>
-          <input className="checkbox" type="checkbox" {...register("chek")} />
-          Product discovery and building what matters
-        </p>
-        <p>
-          <input className="checkbox" type="checkbox" /> Measuring to ensure
-          updates are a success
-        </p>
-        <p>
-          <input className="checkbox" type="checkbox" /> And much more!
-        </p>
+        <div className="checked-container">
+          <div className="checkboxed">
+            <img className="check-img" src={checked} alt="img" />
+            Product discovery and building what matters
+          </div>
+          <div className="checkboxed">
+            <img className="check-img" src={checked} alt="img" />
+            Measuring to ensure updates are a success
+          </div>
+          <div className="checkboxed">
+            <img className="check-img" src={checked} alt="img" />
+            And much more!
+          </div>
+        </div>
         <label>
           <div className="message-container">
             <span className="email-label">Email address</span>
